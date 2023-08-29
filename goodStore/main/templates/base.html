@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Website</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'product_list' %}">Products</a>
+        <a href="{% url 'cart_view' %}">Cart</a>
+        <a href="{% url 'checkout' %}">Checkout</a>
+    </nav>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

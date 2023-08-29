@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>GET MORE FOR LESS </h1>
+    <ul>
+        {% for product in products %}
+         
+           <img src="{{ product.image.url }}" alt="{{ product.name }} Image">
+            
+        {% endfor %}
+    </ul>
+{% endblock %}
